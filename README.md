@@ -1,2 +1,0 @@
-# jen
-Personal portfolio site
