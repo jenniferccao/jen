@@ -656,11 +656,16 @@ html {
   height: fit-content;
   display: flex;
   align-items: center;
+
+  border-radius: 10px;
+  background-color: #ffffff5d;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-bar a {
   color: inherit;
-  padding-left: 20px;
+  padding: 10px 12px;
   display: flex;
   align-items: center;
 }
@@ -681,7 +686,8 @@ html {
     margin-right: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
-    background-color: var(--bg);
+    background-color: #ffffff5d;
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
@@ -714,7 +720,8 @@ html {
   cursor: pointer;
   width: 30px;
   gap: 5px;
-  background-color: var(--bg);
+  background-color: #ffffff5d;
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -744,7 +751,8 @@ html {
 .menu.show {
   display: flex;
   justify-content: right;
-  background-color: var(--bg);
+  background-color: #ffffff5d;
+  backdrop-filter: blur(10px);
   padding: 10px 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
