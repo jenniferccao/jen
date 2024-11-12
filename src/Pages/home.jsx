@@ -63,15 +63,15 @@ const Home = () => {
                             ) : (
                                 <TypeWriterEffect
                                     textStyle={{
-                                        fontFamily: 'Space Mono, monospace',
-                                        fontWeight: 500,
+                                        fontFamily: 'monospace',
+                                        fontWeight: 600,
                                         fontSize: '25pt',
                                     }}
                                     startDelay={0}
                                     cursorColor="#3F3D56"
                                     multiText={[
                                         'CYYZ & CYXU 🛫',
-                                        'Frontend Developer'.toUpperCase(),
+                                        'Front-end Developer'.toUpperCase(),
                                         'Graphic Designer'.toUpperCase(),
                                         'Ivey HBA \'26'.toUpperCase(),
                                     ]}

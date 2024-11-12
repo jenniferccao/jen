@@ -114,7 +114,7 @@ html {
 /* Subtitle styling */
 .name-subtitle {
   color: #000;
-  font-family: "Space Mono", 'monospace';
+  font-family: 'Courier New', 'monospace';
   font-size: 40px; /* Default size for large screens */
   font-style: normal;
   font-weight: 700;
@@ -414,7 +414,7 @@ html {
   border-radius: 10px;
   font-size: 10pt;
   font-weight: 600;
-  font-family: 'Space Mono', 'monospace';
+  font-family: 'Courier New', 'monospace';
   white-space: nowrap;
 }
 
