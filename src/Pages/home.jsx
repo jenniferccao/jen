@@ -24,8 +24,8 @@ const Home = () => {
         const dawg = document.querySelector('.dawg');
         const dawg2 = document.querySelector('.dawg2');
 
-        if (dawg) dawg.style.transform = `translateY(${scrollPosition * -0.3}px)`;
-        if (dawg2) dawg2.style.transform = `translateY(${scrollPosition * -0.1}px)`;
+        if (dawg) dawg.style.transform = `translateY(${scrollPosition * -0.4}px)`;
+        if (dawg2) dawg2.style.transform = `translateY(${scrollPosition * -0.2}px)`;
     };
 
     useEffect(() => {

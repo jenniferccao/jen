@@ -114,7 +114,7 @@ html {
 /* Subtitle styling */
 .name-subtitle {
   color: #000;
-  font-family: 'Courier New', 'monospace';
+  font-family: 'Space Mono', 'monospace';
   font-size: 40px; /* Default size for large screens */
   font-style: normal;
   font-weight: 700;
@@ -152,6 +152,11 @@ html {
 }
 
 @media (max-width: 480px) {
+  .title-container {
+    position: absolute;
+    top: 40%;
+  }
+
   .name-title {
     font-size: 40px; /* Smaller size for mobile */
   }
@@ -314,18 +319,18 @@ html {
   }
 
   .about-container p {
-    font-size: 12px; /* Smaller font size for mobile */
+    font-size: 12pt; 
   }
   
   .intro-container h1 {
-    font-size: 24px; /* Smaller heading for mobile */
+    font-size: 24px; 
   }
 }
 
 
 @media (max-width: 768px) {
   .skills-container {
-    margin-top: 40px; /* Less space above on smaller screens */
+    margin-top: 50px; 
   }
 
   .skills-cols p {
@@ -336,11 +341,11 @@ html {
 
 @media (max-width: 480px) {
   .skills-container {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .skills-cols p {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
   .skills-cols {
@@ -413,9 +418,9 @@ html {
   padding-block: 5px;
   margin-right: 10px;
   border-radius: 10px;
-  font-size: 10pt;
+  font-size: 12pt;
   font-weight: 600;
-  font-family: 'Courier New', 'monospace';
+  font-family: 'Space Mono', 'monospace';
   white-space: nowrap;
 }
 
@@ -499,16 +504,16 @@ html {
   }
 
   .proj-item-left, .proj-item-right {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
   }
 
   .projects-container p {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
   .tech-item {
-    font-size: 8pt;
+    font-size: 10pt;
   }
 
   .projects-container h2 {
@@ -516,7 +521,7 @@ html {
   }
 
   .projects-container h3 {
-    font-size: 10pt;
+    font-size: 12pt;
   }
 }
 
@@ -576,12 +581,12 @@ html {
   object-fit: cover;
 }
 
-/* Hover effect */
+/*
 .design1:hover, .design2:hover {
   cursor: pointer;
   transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+}*/
 
 /* Responsive Design page*/
 @media (max-width: 768px) {
@@ -596,10 +601,6 @@ html {
   
   .design-content-container {
     width: 80%; 
-  }
-
-  .bento-row {
-    height: 200px;
   }
 }
 
