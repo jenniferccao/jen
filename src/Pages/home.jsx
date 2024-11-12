@@ -63,8 +63,8 @@ const Home = () => {
                             ) : (
                                 <TypeWriterEffect
                                     textStyle={{
-                                        fontFamily: 'Space Mono',
-                                        fontWeight: 550,
+                                        fontFamily: 'Space Mono, monospace',
+                                        fontWeight: 500,
                                         fontSize: '25pt',
                                     }}
                                     startDelay={0}
