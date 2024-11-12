@@ -397,6 +397,7 @@ html {
 .proj-item-left {
   padding-right: 20px;
   width: 50%;
+  overflow: scroll;
 }
 
 .proj-techstack {
@@ -465,7 +466,6 @@ html {
 @media (max-width: 768px) {
   .projects-container {
     flex-direction: column;
-    height: auto;
   }
   
   .projects-content-container {
@@ -474,6 +474,10 @@ html {
 
   .projects-container p {
     font-size: 12pt;
+  }
+
+  .proj-item-left {
+    overflow: scroll;
   }
 
   .projects-container h2 {
