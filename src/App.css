@@ -163,6 +163,11 @@ html {
   .name-subtitle {
     font-size: 18px; /* Smaller subtitle size for mobile */
   }
+
+  .down-button {
+    top: 20%;
+    position: relative;
+  }
 }
 
 /* ------------------- NAV BAR ------------------- */
@@ -224,11 +229,6 @@ html {
 @media (max-width: 768px) {
   .nav-logo-box {
     opacity: 0;
-  }
-
-  .nav-bar-center {
-    margin-top: 20px;
-    margin-right: 20px;
   }
 }
 
@@ -310,7 +310,6 @@ html {
   .about-container {
     flex-direction: column;
     height: auto;
-    padding: 10px;
   }
   
   .about-content-container {
@@ -497,6 +496,10 @@ html {
 }
 
 @media (max-width: 480px) {
+  .projects-content-container {
+    width: 90%;
+  }
+
   .proj-item {
     flex-direction: column;
   }
@@ -531,7 +534,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 20px;
 }
 
 .design-content-container {
@@ -546,20 +548,19 @@ html {
 
 .bento-row {
   display: flex;
-  gap: 20px;
   width: 100%;
-  height: fit-content;
   margin-block: 15px;
+  gap: 10px;
 }
 
 /* Individual design elements */
 .design1 {
-  flex: 0 0 40%; /* 30% width */
+  flex: 0 0 40%; 
   aspect-ratio: 1 / 1;
 }
 
 .design2 {
-  flex: 0 0 60%; /* 70% width */
+  flex: 0 0 60%;
   aspect-ratio: 3/2;
 }
 
@@ -602,6 +603,21 @@ html {
   }
 }
 
+@media (max-width: 480px) {
+  .design-content-container {
+    width: 90%;
+  }
+
+  .bento-row {
+    gap: 5px;
+    margin-block: 5px;
+  }
+
+  .design1, .design2 {
+    margin-right: 0;
+  }
+
+}
 
 
 /* ---------------- FOOTER -------------- */
