@@ -20,7 +20,7 @@ const ProjectItem = ({ name, description, tech, pic, link }) => {
 }
 
 const Projects = () => {
-    // Array of project data
+    // array of project data
     const projectList = [
         { name: 'TerraTalk', description: 'A map-based app that uses OpenAI natural language processing to transform user queries such as "bathrooms in restaurants near me"s into map searches, providing fast and personalized georeferenced information.', tech: ['React', 'Node.js', 'OpenAI', 'MongoDB'], pic: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/770/450/datas/gallery.jpg', link: 'https://devpost.com/software/terratalk' },
         { name: 'SANDWCH', description: 'A Supplementary app prototype designed as part of a feasability study on a pod created to mitigate food waste.', tech: ['Figma', 'Case Study'], pic: 'https://i.ibb.co/qBpPtGn/Concept.png', link: 'https://www.figma.com/proto/blmM03Db9Vnbr5bMvKO9mO/Sandwhich-Design-Elements?node-id=37-1146&node-type=canvas&t=EvYbpv8oK0mXA25N-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=37%3A1035&show-proto-sidebar=1' },

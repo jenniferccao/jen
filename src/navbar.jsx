@@ -32,7 +32,7 @@ const NavBar = () => {
     const [activeLink, setActiveLink] = useState('');
     const [isMobile, setIsMobile] = useState(false);
 
-    // Observer to set active link based on scroll position
+    // observer to set active link based on scroll position
     useEffect(() => {
         const sections = document.querySelectorAll("section"); // Assuming each section has <section> tag with an id
         const observerOptions = {

@@ -99,7 +99,7 @@ html {
 /* Title styling */
 .name-title {
   font-family: 'Tilt Warp', sans-serif;
-  font-size: 120px; /* Default size for large screens */
+  font-size: 120px; 
   font-weight: 400;
   line-height: 1;
   
@@ -114,7 +114,6 @@ html {
 /* Subtitle styling */
 .name-subtitle {
   color: #000;
-  font-family: 'Monaco', monospace;
   font-size: 40px; /* Default size for large screens */
   font-style: normal;
   font-weight: 700;
@@ -420,7 +419,6 @@ html {
   border-radius: 10px;
   font-size: 12pt;
   font-weight: 600;
-  font-family: 'Monaco', monospace;
   white-space: nowrap;
 }
 

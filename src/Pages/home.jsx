@@ -8,7 +8,7 @@ const Home = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     const updateScreenSize = () => {
-        setIsMobile(window.innerWidth <= 768); // Set to true if screen width is <= 768px (tablet/mobile)
+        setIsMobile(window.innerWidth <= 768); 
     };
 
     useEffect(() => {
@@ -63,7 +63,6 @@ const Home = () => {
                             ) : (
                                 <TypeWriterEffect
                                     textStyle={{
-                                        fontFamily: 'Monaco',
                                         fontWeight: 600,
                                         fontSize: '25pt',
                                     }}
