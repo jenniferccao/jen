@@ -198,7 +198,7 @@ html {
 .nav-bar-center {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Align items to the right in the column */
+  align-items: flex-end;
   font-size: 14pt;
   gap: 10px;
   margin-top: 30px;
@@ -229,6 +229,10 @@ html {
 @media (max-width: 768px) {
   .nav-logo-box {
     opacity: 0;
+  }
+
+  .nav-bar-center {
+    margin-right: 20px;
   }
 }
 
@@ -550,7 +554,7 @@ html {
   display: flex;
   width: 100%;
   margin-block: 15px;
-  gap: 10px;
+  gap: 15px
 }
 
 /* Individual design elements */
@@ -560,8 +564,7 @@ html {
 }
 
 .design2 {
-  flex: 0 0 60%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 4 / 3;
 }
 
 .design1, .design2 {
@@ -612,11 +615,6 @@ html {
     gap: 5px;
     margin-block: 5px;
   }
-
-  .design1, .design2 {
-    margin-right: 0;
-  }
-
 }
 
 
