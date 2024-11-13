@@ -63,7 +63,7 @@ const Home = () => {
                             ) : (
                                 <TypeWriterEffect
                                     textStyle={{
-                                        fontFamily: 'monospace',
+                                        fontFamily: 'Monaco',
                                         fontWeight: 600,
                                         fontSize: '25pt',
                                     }}
