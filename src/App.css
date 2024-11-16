@@ -565,6 +565,7 @@ html {
 
 .design2 {
   aspect-ratio: 4 / 3;
+  flex: 0 0 60%
 }
 
 .design1, .design2 {
