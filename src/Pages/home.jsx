@@ -70,8 +70,8 @@ const Home = () => {
                                     cursorColor="#3F3D56"
                                     multiText={[
                                         'CYYZ & CYXU 🛫',
-                                        'Front-end Developer'.toUpperCase(),
-                                        'Graphic Designer'.toUpperCase(),
+                                        'Software Developer'.toUpperCase(),
+                                        'Private Pilot'.toUpperCase(),
                                         'Ivey HBA \'26'.toUpperCase(),
                                     ]}
                                     multiTextDelay={2000}

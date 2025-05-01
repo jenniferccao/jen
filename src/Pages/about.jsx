@@ -7,7 +7,7 @@ const About = () => {
                 <div className='intro-container'>
                     <h1>Hi 👋 I’m Jen</h1>
                     <p>
-                        I’m a <b>front-end developer</b> with a background in graphic design, currently pursuing my <b>HBA</b> at <b>Ivey Business School</b> and a dual degree in <b>Computer Science</b> at <b>Western University</b>.
+                        I’m a <b>software developer</b> with a background in design, currently pursuing my <b>HBA</b> at <b>Ivey Business School</b> and a dual degree in <b>Computer Science</b> at <b>Western University</b>.
                     </p>
                     <p>
                         As a licensed pilot, I’m always ready to navigate new challenges, both in the air and on the ground.
@@ -23,8 +23,8 @@ const About = () => {
                     <div className='skills-cols'>
                         <div className='skills-languages'>
                             <h2>Languages</h2>
-                                <p>Java Script</p>
-                                <p>Typescript</p>
+                                <p>JavaScript</p>
+                                <p>TypeScript</p>
                                 <p>HTML</p>
                                 <p>CSS</p>
                                 <p>Python</p>
@@ -35,9 +35,9 @@ const About = () => {
                         </div>
                         <div className='skills-framworks'>
                             <h2>Frameworks</h2>
-                                <p>ReactJS</p>
+                                <p>React.js</p>
                                 <p>React Native</p>
-                                <p>NodeJS</p>
+                                <p>Node.js</p>
                         </div>
                         <div className='skills-tools'>
                             <h2>Tools</h2>
