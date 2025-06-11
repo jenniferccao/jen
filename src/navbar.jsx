@@ -2,27 +2,36 @@ import React, { useState, useEffect } from 'react';
 import logo from './logo.png';
 import { LuMenu } from "react-icons/lu";
 
-function HamburgerMenu({ activeLink }) {
+function HamburgerMenu({ activeLink, setActiveLink }) {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+    const handleClick = (section) => {
+        setActiveLink(section);
+        setIsOpen(false); // close menu after click
     };
 
     return (
         <div className="menu-container">
-            <div className="hamburger" onClick={toggleMenu}>
+            <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
                 <LuMenu />
             </div>
             <nav className={`menu ${isOpen ? "show" : ""}`}>
                 <a href="#home" 
-                    className={`nav-link ${activeLink === 'home' ? 'active' : ''}`}>Home</a>
+                    className={`nav-link ${activeLink === 'home' ? 'active' : ''}`}
+                    onClick={() => setActiveLink('home')}
+                >Home</a>
                 <a href="#about"
-                    className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}>About</a>
+                    className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}
+                    onClick={() => setActiveLink('about')}
+                >About</a>
                 <a href="#projects"
-                    className={`nav-link ${activeLink === 'projects' ? 'active' : ''}`}>Projects</a>
+                    className={`nav-link ${activeLink === 'projects' ? 'active' : ''}`}
+                    onClick={() => setActiveLink('projects')}
+                >Projects</a>
                 <a href="#design"
-                    className={`nav-link ${activeLink === 'design' ? 'active' : ''}`}>Design</a>
+                    className={`nav-link ${activeLink === 'design' ? 'active' : ''}`}
+                    onClick={() => setActiveLink('design')}
+                >Design</a>
             </nav>
         </div>
     );
@@ -34,7 +43,7 @@ const NavBar = () => {
 
     // observer to set active link based on scroll position
     useEffect(() => {
-        const sections = document.querySelectorAll("section"); // Assuming each section has <section> tag with an id
+        const sections = document.querySelectorAll("section"); // Each section should have <section id="...">
         const observerOptions = {
             root: null,
             rootMargin: "0px",
@@ -80,24 +89,34 @@ const NavBar = () => {
 
             <div className='nav-bar-center'>
                 {isMobile ? (
-                    <HamburgerMenu activeLink={activeLink} />
+                    <HamburgerMenu activeLink={activeLink} setActiveLink={setActiveLink} />
                 ) : (
                     <>
                         <a
+                            href="#home"
+                            className={`nav-link ${activeLink === 'home' ? 'active' : ''}`}
+                            onClick={() => setActiveLink('home')}
+                        >
+                            Home —
+                        </a>
+                        <a
                             href="#about"
                             className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}
+                            onClick={() => setActiveLink('about')}
                         >
                             About —
                         </a>
                         <a
                             href="#projects"
                             className={`nav-link ${activeLink === 'projects' ? 'active' : ''}`}
+                            onClick={() => setActiveLink('projects')}
                         >
                             Projects —
                         </a>
                         <a
                             href="#design"
                             className={`nav-link ${activeLink === 'design' ? 'active' : ''}`}
+                            onClick={() => setActiveLink('design')}
                         >
                             Design —
                         </a>

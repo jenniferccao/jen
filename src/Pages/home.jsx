@@ -37,7 +37,7 @@ const Home = () => {
 
     return (
         <div className='main-container'>
-            <div className='bg-container' id ="home">
+            <section className='bg-container' id="home">
                 <div className="circle-1"></div>
                 <div className="circle-2"></div>
                 {!isMobile && (
@@ -59,7 +59,7 @@ const Home = () => {
                         
                         <div className='name-subtitle'>
                             {isMobile ? (
-                                <span>CYXU & CYYZ 🛫</span> // mobile text
+                                <span>CYXU & CYYZ</span> // mobile text
                             ) : (
                                 <TypeWriterEffect
                                     textStyle={{
@@ -69,7 +69,7 @@ const Home = () => {
                                     startDelay={0}
                                     cursorColor="#3F3D56"
                                     multiText={[
-                                        'CYYZ & CYXU 🛫',
+                                        'CYYZ & CYXU',
                                         'Software Developer'.toUpperCase(),
                                         'Private Pilot'.toUpperCase(),
                                         'Ivey HBA \'26'.toUpperCase(),
@@ -85,7 +85,7 @@ const Home = () => {
 
                     <a className='down-button' href='#about'><BiChevronDown /></a>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }

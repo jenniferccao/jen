@@ -224,6 +224,12 @@ html {
   font-weight: bold;
 }
 
+.nav-link.active,
+.menu a.active {
+  font-weight: bold;
+  color: var(--main-blue);
+}
+
 
 /* responsive nav bar */
 @media (max-width: 768px) {
@@ -747,11 +753,26 @@ html {
 }
 
 .menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: right;
   gap: 10px;
   margin-top: 20px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  background-color: #ffffff5d;
+  backdrop-filter: blur(10px);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .menu a {
@@ -760,14 +781,4 @@ html {
   color: var(--black);
   padding: 2.5px 0;
   text-align: right;
-}
-
-.menu.show {
-  display: flex;
-  justify-content: right;
-  background-color: #ffffff5d;
-  backdrop-filter: blur(10px);
-  padding: 10px 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

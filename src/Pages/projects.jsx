@@ -29,7 +29,7 @@ const Projects = () => {
 
     return (
         <div className='projects-container'>
-            <div className='projects-content-container' id="projects">
+            <section className='projects-content-container' id="projects">
                 <h2>PROJECTS</h2>
                 {/* Map over projectList to render each ProjectItem */}
                 {projectList.map((project, index) => (
@@ -44,7 +44,7 @@ const Projects = () => {
                 ))}
 
                 <a href='https://github.com/jenniferccao' target='blank' className='see-more'>See More →</a>
-            </div>
+            </section>
         </div>
     );
 }

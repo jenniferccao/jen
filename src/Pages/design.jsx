@@ -12,7 +12,7 @@ const Design = () => {
 
     return (
         <div className='design-container'>
-            <div className='design-content-container' id="design">
+            <section className='design-content-container' id="design">
                 <h2>DESIGN</h2>
 
                 <div className='design-bento'>
@@ -27,7 +27,7 @@ const Design = () => {
                 </div>
 
                 <a href ='https://dribbble.com/jencao' target='blank' className='see-more'>See More →</a>
-            </div>
+            </section>
         </div>
     );
 }

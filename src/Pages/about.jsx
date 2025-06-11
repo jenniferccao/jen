@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
     return(
         <div className='about-container'>
-            <div className='about-content-container' id="about">
+            <section className='about-content-container' id="about">
                 <div className='intro-container'>
                     <h1>Hi 👋 I’m Jen</h1>
                     <p>
@@ -60,7 +60,7 @@ const About = () => {
                     </div>
                 </div>
 
-            </div>
+            </section>
         </div>
     );
 }
