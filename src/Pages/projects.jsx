@@ -31,7 +31,6 @@ const Projects = () => {
         <div className='projects-container'>
             <section className='projects-content-container' id="projects">
                 <h2>PROJECTS</h2>
-                {/* Map over projectList to render each ProjectItem */}
                 {projectList.map((project, index) => (
                     <ProjectItem 
                         key={index} 

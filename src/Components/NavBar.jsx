@@ -19,7 +19,6 @@ const NavBar = () => {
         >
           About
         </Link>
-        {/* Add more links as needed */}
       </div>
     </nav>
   );

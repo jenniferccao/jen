@@ -14,7 +14,7 @@ html {
   transition: all 0.3s ease;
 }
 
-/* Main container */
+/* main container */
 .main-container {
   height: 120vh;
   width: 100%;
@@ -96,7 +96,6 @@ html {
   gap: 10px; 
 }
 
-/* Title styling */
 .name-title {
   font-family: 'Tilt Warp', sans-serif;
   font-size: 120px; 
@@ -111,10 +110,9 @@ html {
   text-shadow: 1px 3px 5px #ffffff6e;
 }
 
-/* Subtitle styling */
 .name-subtitle {
   color: #000;
-  font-size: 40px; /* Default size for large screens */
+  font-size: 40px; 
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -125,6 +123,7 @@ html {
   color: var(--black);
   top: 25%;
   position: relative;
+  z-index: 1000;
 }
 
 .down-button * {
@@ -138,14 +137,14 @@ html {
   color: var(--main-blue);
 }
 
-/* Responsive homepage */
+/* responsive homepage */
 @media (max-width: 768px) {
   .name-title {
-    font-size: 60px; /* Adjust title size for tablets */
+    font-size: 60px;
   }
   
   .name-subtitle {
-    font-size: 20pt; /* Adjust subtitle size for tablets */
+    font-size: 20pt; 
   }
 
 }
