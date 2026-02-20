@@ -3,9 +3,9 @@ import TypeWriterEffect from 'react-typewriter-effect';
 import { BiChevronDown } from "react-icons/bi";
 
 const Home = () => {
-
     // for responsive react
     const [isMobile, setIsMobile] = useState(false);
+    const [scrollY, setScrollY] = useState(0);
 
     const updateScreenSize = () => {
         setIsMobile(window.innerWidth <= 768); 
@@ -19,40 +19,38 @@ const Home = () => {
     }, []);
 
     // parallax
-    const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        const dawg = document.querySelector('.dawg');
-        const dawg2 = document.querySelector('.dawg2');
-
-        if (dawg) dawg.style.transform = `translateY(${scrollPosition * -0.4}px)`;
-        if (dawg2) dawg2.style.transform = `translateY(${scrollPosition * -0.2}px)`;
-    };
-
     useEffect(() => {
+        if (isMobile) return; 
+
+        const handleScroll = () => setScrollY(window.scrollY);
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-
+    }, [isMobile]);
 
     return (
         <div className='main-container'>
             <section className='bg-container' id="home">
                 <div className="circle-1"></div>
                 <div className="circle-2"></div>
-                {!isMobile && (
-                    <>
-                    <div className='dawg'>
-                        <img src='dawg.png' alt="Background element" />
-                    </div>
 
-                    <div className='dawg2'>
-                        <img src='dawg.png' alt="Background element" />
-                    </div>
-                    </>
-                )}
+                <div 
+                    className='dawg'
+                    style={{ 
+                        transform: `translateY(${scrollY * 0.4}px) scaleX(-1) scale(0.5)` 
+                    }}
+                >
+                    <img src='da20.png' alt="DA20" />
+                </div>
+
+                <div 
+                    className='dawg2'
+                    style={{ 
+                        transform: `translateY(${scrollY * 0.2}px) scale(0.4)` 
+                    }}
+                >
+                    <img src='c172.png' alt="C172" />
+                </div>
                 
-
                 <div className='banner-container'>
                     <div className='title-container'>
                         <div className='name-title'>JENNIFER CAO</div>
@@ -63,6 +61,7 @@ const Home = () => {
                             ) : (
                                 <TypeWriterEffect
                                     textStyle={{
+                                        fontFamily: 'Space Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
                                         fontWeight: 600,
                                         fontSize: '25pt',
                                     }}
@@ -72,7 +71,6 @@ const Home = () => {
                                         'CYYZ & CYXU',
                                         'Software Developer'.toUpperCase(),
                                         'Private Pilot'.toUpperCase(),
-                                        'Ivey HBA \'26'.toUpperCase(),
                                     ]}
                                     multiTextDelay={2000}
                                     multiTextLoop={true}
@@ -80,7 +78,6 @@ const Home = () => {
                                 />
                             )}
                         </div>
-
                     </div>
 
                     <a className='down-button' href='#about'><BiChevronDown /></a>

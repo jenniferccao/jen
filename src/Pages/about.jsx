@@ -1,4 +1,5 @@
 import React from 'react';
+import Experience from './experience.jsx';
 
 const About = () => {
     return(
@@ -7,15 +8,14 @@ const About = () => {
                 <div className='intro-container'>
                     <h1>Hi 👋 I’m Jen</h1>
                     <p>
-                        I’m a <b>software developer</b> with a background in design, currently pursuing my <b>HBA</b> at <b>Ivey Business School</b> and a dual degree in <b>Computer Science</b> at <b>Western University</b>.
+                        I’m a software developer with a background in design, currently pursuing my HBA at Ivey Business School and a dual degree in Computer Science at Western University.
                     </p>
                     <p>
-                        As a licensed pilot, I’m always ready to navigate new challenges, both in the air and on the ground.
-                    </p>
-                    <p>
-                        I’m passionate about turning complex problems into creative and practical solutions. My experience spans design, development, and strategy, enabling me to approach technical challenges with a well-rounded perspective. Whether it's building intuitive user interfaces or contributing to broader strategic initiatives, <b>I enjoy making ideas take flight.</b>
+                        As a licensed pilot, I’m always ready to navigate new challenges, both in the air and on the ground. <b>I enjoy making ideas take flight.</b>
                     </p>
                 </div>
+
+                <Experience/>
                 
                 <div className='skills-container'>
                     <h2>SKILLS</h2>
@@ -38,6 +38,8 @@ const About = () => {
                                 <p>React.js</p>
                                 <p>React Native</p>
                                 <p>Node.js</p>
+                                <p>Spring Boot</p>
+                                <p>Flask</p>
                         </div>
                         <div className='skills-tools'>
                             <h2>Tools</h2>
