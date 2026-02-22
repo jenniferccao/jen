@@ -12,3 +12,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.dawg-anim-enter {
+  animation: dawgSlideLeft 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.dawg2-anim-enter {
+  animation: dawgSlideRight 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes dawgSlideLeft {
+  0% {
+    transform: translateX(200vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dawgSlideRight {
+  0% {
+    transform: translateX(250vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-fade-in {
+  animation: textFadeIn 1.5s ease-out forwards;
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .dawg-anim-enter,
+  .dawg2-anim-enter,
+  .text-fade-in {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

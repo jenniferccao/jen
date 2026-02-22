@@ -18,30 +18,31 @@ html {
 .main-container {
   height: 120vh;
   width: 100%;
-  overflow:hidden
+  overflow: hidden
 }
 
 .bg-container {
-  position: relative; 
+  position: relative;
   background-color: var(--bg);
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   z-index: 0;
 }
 
-.circle-1, .circle-2 {
+.circle-1,
+.circle-2 {
   position: absolute;
   border-radius: 50%;
   -webkit-filter: blur(50px);
-  
-  z-index: -1; 
+
+  z-index: -1;
 }
 
 .dawg {
   position: absolute;
   border-radius: 50%;
-  z-index: -1; 
+  z-index: -1;
   top: 100px;
   left: -400px;
   transition: none;
@@ -49,15 +50,15 @@ html {
 }
 
 .dawg img {
-    width: 90%; 
-    height: 90%; 
+  width: 90%;
+  height: 90%;
 }
 
 
 .dawg2 {
   position: absolute;
   border-radius: 50%;
-  z-index: -1; 
+  z-index: -1;
   top: -100px;
   right: -400px;
   transition: none;
@@ -94,17 +95,17 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  text-align: center; 
-  gap: 10px; 
+  align-items: center;
+  text-align: center;
+  gap: 10px;
 }
 
 .name-title {
   font-family: 'Tilt Warp', sans-serif;
-  font-size: 120px; 
+  font-size: 120px;
   font-weight: 400;
   line-height: 1;
-  
+
   background: -webkit-linear-gradient(300deg, #e72ff7, #39edde);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,7 +116,7 @@ html {
 
 .name-subtitle {
   color: #000;
-  font-size: 40px; 
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -145,9 +146,9 @@ html {
   .name-title {
     font-size: 60px;
   }
-  
+
   .name-subtitle {
-    font-size: 20pt; 
+    font-size: 20pt;
   }
 
   .dawg {
@@ -180,7 +181,7 @@ html {
   .name-title {
     font-size: 40px;
   }
-  
+
   .name-subtitle {
     font-size: 18px;
   }
@@ -193,6 +194,7 @@ html {
   .dawg {
     left: -250px;
     top: 50%;
+    z-index: 999;
   }
 
   .dawg img {
@@ -203,6 +205,7 @@ html {
   .dawg2 {
     right: -750px;
     top: 30%;
+    z-index: 999;
   }
 
   .dawg2 img {
@@ -325,8 +328,8 @@ html {
 }
 
 .exp-row p {
-  margin: 0; 
-  padding-block: 2px; 
+  margin: 0;
+  padding-block: 2px;
 }
 
 .job-title {
@@ -345,13 +348,15 @@ html {
   overflow: scroll;
 }
 
-.skills-cols > div {
-  width:25%;
+.skills-cols>div {
+  width: 25%;
 }
 
 .skills-cols p {
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Ensures no padding as well */
+  margin: 0;
+  /* Removes default margin */
+  padding: 0;
+  /* Ensures no padding as well */
 }
 
 .skills-cols h2 {
@@ -364,9 +369,10 @@ html {
     flex-direction: column;
     height: auto;
   }
-  
+
   .about-content-container {
-    width: 80%; /* Wider on smaller screens */
+    width: 80%;
+    /* Wider on smaller screens */
   }
 
   .about-container p {
@@ -383,30 +389,30 @@ html {
     flex-direction: column;
     height: auto;
   }
-  
+
   .about-content-container {
     width: 90%;
   }
 
   .about-container p {
-    font-size: 12pt; 
+    font-size: 12pt;
   }
-  
+
   .intro-container h1 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 }
 
 
 @media (max-width: 768px) {
   .skills-container {
-    margin-top: 50px; 
+    margin-top: 50px;
   }
 
   .skills-cols p {
     font-size: 12pt;
   }
-  
+
 }
 
 @media (max-width: 480px) {
@@ -423,15 +429,17 @@ html {
     overflow: scroll;
   }
 
-  .skills-cols > div {
-    width: 100%; /* Full width for each skill section */
+  .skills-cols>div {
+    width: 100%;
+    /* Full width for each skill section */
     margin-right: 20px;
   }
 
   .skills-cols h2 {
-    font-size: 16px; /* Smaller section headings */
+    font-size: 16px;
+    /* Smaller section headings */
   }
-  
+
 
 }
 
@@ -448,13 +456,13 @@ html {
 }
 
 .projects-content-container {
-  width:60%;
+  width: 60%;
   display: block;
 }
 
 .proj-item {
   display: flex;
-  width:100%;
+  width: 100%;
   aspect-ratio: 3/1;
   border-radius: 10px;
   background-color: var(--bg);
@@ -518,16 +526,16 @@ html {
 }
 
 .see-more {
-    text-decoration: none;
-    color: inherit;
-    font-size: 12pt;
-    padding-inline: 12px;
-    padding-block: 8px;
-    border-style: solid;
-    border-color: var(--med-grey);
-    border-width: 1.5px;
-    border-radius: 10px;
-    float: right;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12pt;
+  padding-inline: 12px;
+  padding-block: 8px;
+  border-style: solid;
+  border-color: var(--med-grey);
+  border-width: 1.5px;
+  border-radius: 10px;
+  float: right;
 }
 
 .see-more:hover {
@@ -541,9 +549,9 @@ html {
   .projects-container {
     flex-direction: column;
   }
-  
+
   .projects-content-container {
-    width: 80%; 
+    width: 80%;
   }
 
   .projects-container p {
@@ -576,7 +584,8 @@ html {
     flex-direction: column;
   }
 
-  .proj-item-left, .proj-item-right {
+  .proj-item-left,
+  .proj-item-right {
     margin-bottom: 20px;
     width: 100%;
   }
@@ -609,7 +618,7 @@ html {
 }
 
 .design-content-container {
-  width:60%;
+  width: 60%;
   display: block;
 }
 
@@ -627,7 +636,7 @@ html {
 
 /* Individual design elements */
 .design1 {
-  flex: 0 0 40%; 
+  flex: 0 0 40%;
   aspect-ratio: 1 / 1;
 }
 
@@ -636,7 +645,8 @@ html {
   flex: 0 0 60%
 }
 
-.design1, .design2 {
+.design1,
+.design2 {
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -646,7 +656,8 @@ html {
   justify-content: center;
 }
 
-.design1 img, .design2 img {
+.design1 img,
+.design2 img {
   height: 100%;
   width: 100%l;
   object-fit: cover;
@@ -669,9 +680,9 @@ html {
   .design-content-container h2 {
     font-size: 14pt;
   }
-  
+
   .design-content-container {
-    width: 80%; 
+    width: 80%;
   }
 }
 

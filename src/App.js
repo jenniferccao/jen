@@ -14,19 +14,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar/>
+        <NavBar />
       </header>
 
       <body>
-        <Home/>
-        <About/>
-        <Projects/>
-        <Design/>
-        <Contact/>
+        <Home />
+        <About />
+        <Projects />
+        <Design />
+        <Contact />
       </body>
 
-      <Footer/>
-      
+      <Footer />
+
     </div>
   );
 }

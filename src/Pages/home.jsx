@@ -6,9 +6,20 @@ const Home = () => {
     // for responsive react
     const [isMobile, setIsMobile] = useState(false);
     const [scrollY, setScrollY] = useState(0);
+    const [runEnterAnim, setRunEnterAnim] = useState(true);
+
+    useEffect(() => {
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) {
+            setRunEnterAnim(false);
+            return;
+        }
+        const timer = setTimeout(() => setRunEnterAnim(false), 1500);
+        return () => clearTimeout(timer);
+    }, []);
 
     const updateScreenSize = () => {
-        setIsMobile(window.innerWidth <= 768); 
+        setIsMobile(window.innerWidth <= 768);
     };
 
     useEffect(() => {
@@ -20,7 +31,7 @@ const Home = () => {
 
     // parallax
     useEffect(() => {
-        if (isMobile) return; 
+        if (isMobile) return;
 
         const handleScroll = () => setScrollY(window.scrollY);
         window.addEventListener('scroll', handleScroll);
@@ -33,29 +44,29 @@ const Home = () => {
                 <div className="circle-1"></div>
                 <div className="circle-2"></div>
 
-                <div 
+                <div
                     className='dawg'
-                    style={{ 
-                        transform: `translateY(${scrollY * 0.4}px) scaleX(-1) scale(0.5)` 
+                    style={{
+                        transform: `translateY(${scrollY * 0.4}px) scaleX(-1) scale(0.5)`
                     }}
                 >
-                    <img src='da20.png' alt="DA20" />
+                    <img className={runEnterAnim ? 'dawg-anim-enter' : ''} src='da20.png' alt="DA20" />
                 </div>
 
-                <div 
+                <div
                     className='dawg2'
-                    style={{ 
-                        transform: `translateY(${scrollY * 0.2}px) scale(0.4)` 
+                    style={{
+                        transform: `translateY(${scrollY * 0.2}px) scale(0.4)`
                     }}
                 >
-                    <img src='c172.png' alt="C172" />
+                    <img className={runEnterAnim ? 'dawg2-anim-enter' : ''} src='c172.png' alt="C172" />
                 </div>
-                
+
                 <div className='banner-container'>
                     <div className='title-container'>
-                        <div className='name-title'>JENNIFER CAO</div>
-                        
-                        <div className='name-subtitle'>
+                        <div className={`name-title ${runEnterAnim ? 'text-fade-in' : ''}`}>JENNIFER CAO</div>
+
+                        <div className={`name-subtitle ${runEnterAnim ? 'text-fade-in' : ''}`}>
                             {isMobile ? (
                                 <span>CYXU & CYYZ</span> // mobile text
                             ) : (
