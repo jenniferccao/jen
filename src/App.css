@@ -144,7 +144,7 @@ html {
 /* responsive homepage */
 @media (max-width: 768px) {
   .name-title {
-    font-size: 60px;
+    font-size: 100px;
   }
 
   .name-subtitle {
@@ -152,7 +152,7 @@ html {
   }
 
   .dawg {
-    left: -300px;
+    left: -550px;
     top: 40%;
   }
 
@@ -175,19 +175,25 @@ html {
 @media (max-width: 480px) {
   .title-container {
     position: absolute;
-    top: 40%;
+    top: 35%;
+    align-items: flex-start;
+    padding-left: 50px;
   }
 
   .name-title {
-    font-size: 40px;
+    font-size: 80px;
+    align-items: start;
+    text-align: left;
   }
 
   .name-subtitle {
-    font-size: 18px;
+    font-size: 20px;
+    text-align: left;
+    visibility: hidden;
   }
-
+  
   .down-button {
-    top: 20%;
+    top: 25%;
     position: relative;
   }
 

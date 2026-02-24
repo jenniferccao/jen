@@ -64,8 +64,18 @@ const Home = () => {
 
                 <div className='banner-container'>
                     <div className='title-container'>
-                        <div className={`name-title ${runEnterAnim ? 'text-fade-in' : ''}`}>JENNIFER CAO</div>
-
+                        <div className={`name-title ${runEnterAnim ? 'text-fade-in' : ''}`}>
+                            {isMobile ? (
+                                <>
+                                    JENNIFER
+                                    <br />
+                                    CAO
+                                </>
+                            ) : (
+                                'JENNIFER CAO'
+                            )}
+                        </div>
+                            
                         <div className={`name-subtitle ${runEnterAnim ? 'text-fade-in' : ''}`}>
                             {isMobile ? (
                                 <span>CYXU & CYYZ</span> // mobile text
