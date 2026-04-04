@@ -23,8 +23,8 @@ const Projects = () => {
     // array of project data
     const projectList = [
         { name: 'PreRide', description: 'An app that predicts relative difficulty of segments of a given bike route based on hill gradients and wind data of a given day.', tech: ['React', 'Typescript', 'MapBox', 'OpenMeteo'], pic: 'preride_cover.png', link: 'https://preride.vercel.app/' },
+        { name: 'BingoBud', description: 'A web-based bingo card scanner and marker, helping people keep track of multiple cards and calls.', tech: ['React', 'TypeScript', 'Tesseract OCR'], pic: 'bingo_prev.png', link:'https://bingobud.vercel.app/' },
         { name: 'Chirpit', description: 'A Google Chrome extension for accessible learning by letting users interact with webpages through voice instead of just text. ', tech: ['Javascript', 'Chrome Extension APIs', 'Elevenlabs'], pic: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/004/150/243/datas/gallery.jpg', link: 'https://github.com/jenniferccao/Chirp' },
-        { name: 'Pipstop', description: 'PipStop is a platform designed to boost hackathon participants\'s well-being and social engagement by presenting randomized health, social, and fun challenges, helping them stay energized and connected throughout the event', tech: ['HTML', 'CSS', 'Node.js', 'SQL Lite', 'infobip API'], pic: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/683/754/datas/medium.png', link:'https://devpost.com/software/pipstop' },
     ];
 
     return (
